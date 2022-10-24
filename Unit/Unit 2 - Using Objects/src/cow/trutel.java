@@ -2,13 +2,23 @@ package cow;
 
 public class trutel {
     public static void main(String[] args) {
-        int one = 1;
-
-        int two = 2;
         
-        String zee = "Z";
         
-        System.out.println(one + two + zee);
+        System.out.println(sqrtSum(72341));
+        
 
+       
+}
+
+public static double sqrtSum(int number){
+    int firstDigit = number / 10000;
+    int thirdDigit = number % 1000 / 100;
+    int fifthDigit = number % 10;
+
+    int sum = firstDigit + thirdDigit + fifthDigit;
+
+    double sqrtSum = Math.sqrt(sum);
+
+    return sqrtSum;
 }
 }
